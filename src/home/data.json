@@ -1,0 +1,80 @@
+{
+  "projects": [
+    {
+      "name": "Figma",
+      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
+      "url": "https://www.instagram.com/",
+      "main-image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images": [
+        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1726502292828-d96388c6250f?q=80&w=1954&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ]
+    },
+    {
+      "name": "Figma2",
+      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
+      "main-image": "https://plus.unsplash.com/premium_photo-1681487899272-f0e55f4fb7e0?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images": [
+        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ]
+    },
+    {
+      "name": "Figma3",
+      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
+      "url": "https://www.figma.com/",
+      "main-image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images": [
+        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ]
+    },
+    {
+      "name": "Figma4",
+      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
+      "url": "https://www.figma.com/",
+      "main-image": "https://plus.unsplash.com/premium_photo-1681487899272-f0e55f4fb7e0?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images": [
+        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ]
+    },
+    {
+      "name": "Figma5",
+      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
+      "url": "https://www.figma.com/",
+      "main-image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images": [
+        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ]
+    },
+    {
+      "name": "Figma6",
+      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
+      "url": "https://www.figma.com/",
+      "main-image": "https://plus.unsplash.com/premium_photo-1681487899272-f0e55f4fb7e0?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "javascript"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "Tailwind"
+    },
+    {
+      "name": "php"
+    },
+    {
+      "name": "api"
+    },
+    {
+      "name": "Figma"
+    }
+  ]
+}
