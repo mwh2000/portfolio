@@ -19,7 +19,7 @@
       "description": "quran app, a project for showing and reading the quran.",
       "url": "https://mwh2000.github.io/Quran",
       "main-image": "./quran.jpeg",
-      "images": ["./quran.png", "./quran2.png"]
+      "images": ["./quran.jpeg", "./quran2.png"]
     },
     {
       "name": "Menu app",
