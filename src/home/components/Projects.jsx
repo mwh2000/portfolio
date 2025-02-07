@@ -39,6 +39,7 @@ export default function Projects() {
               <img
                 src={project["main-image"]}
                 alt={project["name"]}
+                loading="lazy"
                 className="h-64 rounded-2xl object-cover"
                 onClick={
                   project.images?.length ? () => showModal(project) : undefined
@@ -76,7 +77,8 @@ export default function Projects() {
                   <img
                     src={image}
                     alt={currentProject["name"]}
-                    className="h-72 w-full rounded-2xl object-fill"
+                    className="h-72 w-full rounded-2xl object-contain"
+                    loading="lazy"
                   />
                 </SwiperSlide>
               ))}
