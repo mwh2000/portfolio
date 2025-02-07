@@ -83,7 +83,7 @@ export default function Experiences() {
               mask="url(#ipTCategoryManagement0)"
             ></path>
           </svg>
-          <p>Project coordinator</p>
+          <p>Projects coordinator</p>
         </div>
       </div>
     </div>

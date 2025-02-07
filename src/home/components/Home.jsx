@@ -19,7 +19,7 @@ export default function Body() {
           <span className="text-lg md:text-xl">Years</span>{" "}
           <span className="text-lg md:text-xl">Experience</span>
         </div>
-        <span className="text-3xl md:text-5xl font-medium">3</span>
+        <span className="text-3xl md:text-5xl font-medium">4</span>
       </div>
 
       <div className="hidden md:flex flex-col gap-6 font-medium text-left">

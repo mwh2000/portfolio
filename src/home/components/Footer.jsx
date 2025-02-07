@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FaTelegramPlane, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {

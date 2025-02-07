@@ -76,7 +76,7 @@ export default function Projects() {
                   <img
                     src={image}
                     alt={currentProject["name"]}
-                    className="h-64 w-full rounded-2xl object-cover"
+                    className="h-72 w-full rounded-2xl object-fill"
                   />
                 </SwiperSlide>
               ))}

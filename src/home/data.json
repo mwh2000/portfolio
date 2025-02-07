@@ -1,60 +1,31 @@
 {
   "projects": [
     {
-      "name": "Figma",
-      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
-      "url": "https://www.instagram.com/",
-      "main-image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "images": [
-        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1726502292828-d96388c6250f?q=80&w=1954&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ]
+      "name": "Planet of Medicine",
+      "description": "Design UI/UX for a medical project called Planet of Medicine, a project for clinic management and booking medical appointments online.",
+      "url": "https://www.planetofmedicine.com/",
+      "main-image": "./pom.png",
+      "images": ["./pom.png", "./pom1.png"]
     },
     {
-      "name": "Figma2",
-      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
-      "main-image": "https://plus.unsplash.com/premium_photo-1681487899272-f0e55f4fb7e0?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "images": [
-        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ]
+      "name": "Restaurant Design",
+      "description": "Create & Design UI/UX for a burger restaurant, a project for showing the restaurant's menu.",
+      "url": "https://mwh2000.github.io/resturant",
+      "main-image": "./rest1.png",
+      "images": ["./rest2.png", "./rest3.png"]
     },
     {
-      "name": "Figma3",
-      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
-      "url": "https://www.figma.com/",
-      "main-image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "images": [
-        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ]
+      "name": "Quran App",
+      "description": "quran app, a project for showing and reading the quran.",
+      "url": "https://mwh2000.github.io/Quran",
+      "main-image": "./quran.png",
+      "images": ["./quran.png", "./quran2.png"]
     },
     {
-      "name": "Figma4",
-      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
-      "url": "https://www.figma.com/",
-      "main-image": "https://plus.unsplash.com/premium_photo-1681487899272-f0e55f4fb7e0?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "images": [
-        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ]
-    },
-    {
-      "name": "Figma5",
-      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
-      "url": "https://www.figma.com/",
-      "main-image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "images": [
-        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1727294810277-5da030783146?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ]
-    },
-    {
-      "name": "Figma6",
-      "description": "Figma is a collaborative interface for creating, editing, and sharing designs.",
-      "url": "https://www.figma.com/",
-      "main-image": "https://plus.unsplash.com/premium_photo-1681487899272-f0e55f4fb7e0?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "images": []
+      "name": "Menu app",
+      "description": "Design UI/UX for a menu app, a project for showing the menu of a restaurants.",
+      "main-image": "./menu1.png",
+      "images": ["./menu1.png", "./menu2.png"]
     }
   ],
   "skills": [
