@@ -18,13 +18,13 @@
       "name": "Quran App",
       "description": "quran app, a project for showing and reading the quran.",
       "url": "https://mwh2000.github.io/Quran",
-      "main-image": "./quran.png",
+      "main-image": "./quran.jpeg",
       "images": ["./quran.png", "./quran2.png"]
     },
     {
       "name": "Menu app",
       "description": "Design UI/UX for a menu app, a project for showing the menu of a restaurants.",
-      "main-image": "./menu1.png",
+      "main-image": "./menu1.jpeg",
       "images": ["./menu1.png", "./menu2.png"]
     }
   ],
