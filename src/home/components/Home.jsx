@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { BiLogoFlutter } from "react-icons/bi";
 import { FaFigma, FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 // import avatarBg from "./avatarBg.svg";
@@ -10,7 +11,7 @@ export default function Body() {
         <span>Hey there,</span>
         <span>I'm Mustafa</span>
         <p className="md:hidden text-lg font-light">
-          Web programmer , UI/UX Designer & Projects coordinator
+          Web, Mobile app programmer , UI/UX Designer & Projects coordinator
         </p>
       </div>
 
@@ -23,10 +24,13 @@ export default function Body() {
       </div>
 
       <div className="hidden md:flex flex-col gap-6 font-medium text-left">
-        <p>Web programmer , UI/UX Designer, Projects coordinator</p>
+        <p>Web, Mobile app programmer , UI/UX Designer, Projects coordinator</p>
         <div className="flex gap-3">
           <span className="text-3xl text-[#ea4c1d] p-2 rounded-full bg-secondary">
             <FaFigma />
+          </span>
+          <span className="text-3xl text-[#ea4c1d] p-2 rounded-full bg-secondary">
+            <BiLogoFlutter />
           </span>
           <span className="text-3xl text-[#5ed3f3] p-2 rounded-full bg-secondary">
             <FaReact />

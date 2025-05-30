@@ -4,6 +4,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { DiPhp } from "react-icons/di";
 import { TbApi } from "react-icons/tb";
 import { DiJavascript1 } from "react-icons/di";
+import { BiLogoFlutter } from "react-icons/bi";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -13,6 +14,7 @@ import data from "./../data.json";
 
 const iconMapping = {
   Figma: FaFigma,
+  Flutter: BiLogoFlutter,
   React: FaReact,
   Tailwind: RiTailwindCssFill,
   php: DiPhp,
