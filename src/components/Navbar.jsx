@@ -17,7 +17,7 @@ export default function Navbar() {
             className="h-8"
             alt=""
           /> */}
-          <span className="self-center font-babylonica text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center font-babylonica text-2xl font-semibold whitespace-nowrap">
             Mustafa
           </span>
         </a>
@@ -86,7 +86,7 @@ export default function Navbar() {
           }`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col uppercase p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col uppercase p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
             <li>
               <a href="#" className="navlink active-link" aria-current="page">
                 Services
