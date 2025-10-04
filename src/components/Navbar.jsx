@@ -9,7 +9,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-bg dark:bg-gray-900 w-full z-20 top-0 start-0">
+    <nav className="bg-bg w-full z-20 top-0 start-0">
       <div className="md:max-w-[85%] flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img

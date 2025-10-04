@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "name": "Hakli",
+      "description": "Design UI/UX & Develop a dashboard, mobile app, farm panel for a real services project called Hakli, a project for control and manage the smart farms online.",
+      "main-image": "./hakli.png",
+      "images": ["./hakli.png", "./hakli_app.png"]
+    },
+    {
       "name": "Planet of Medicine",
       "description": "Design UI/UX for a medical project called Planet of Medicine, a project for clinic management and booking medical appointments online.",
       "url": "https://www.planetofmedicine.com/",
