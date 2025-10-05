@@ -7,6 +7,12 @@
       "images": ["./hakli.png", "./hakli_app.png"]
     },
     {
+      "name": "KCML",
+      "description": "Develop a dashboard for KARBALA Cement Manufacturing Limited project called KCML",
+      "main-image": "./KCML.png",
+      "images": ["./KCML.png", "./KCML_app.png"]
+    },
+    {
       "name": "Planet of Medicine",
       "description": "Design UI/UX for a medical project called Planet of Medicine, a project for clinic management and booking medical appointments online.",
       "url": "https://www.planetofmedicine.com/",
