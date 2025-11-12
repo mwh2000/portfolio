@@ -4,7 +4,8 @@
       "name": "Hakli",
       "description": "Design UI/UX & Develop a dashboard, mobile app, farm panel for a real services project called Hakli, a project for control and manage the smart farms online.",
       "main-image": "./hakli.png",
-      "images": ["./hakli.png", "./hakli_app.png"]
+      "images": ["./hakli.png", "./hakli_app.png"],
+      "url": "https://apps.apple.com/us/app/hakli/id6753976619"
     },
     {
       "name": "KCML",
