@@ -1,5 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import { FaTelegramPlane, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import {
+  // FaTelegramPlane,
+  FaLinkedin,
+  FaWhatsapp,
+  FaInstagram,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -9,7 +14,7 @@ export default function Footer() {
           <p>
             Let's make something amazing together start by{" "}
             <a
-              href="mailto:asasimr55@gmail.com"
+              href="mailto:mstafawahed1@gmail.com"
               target="_blank"
               className="text-red-400 font-bold underline"
             >
@@ -18,13 +23,21 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex gap-8 flex-col md:flex-wrap md:flex-row justify-self-start md:justify-self-center items-start">
-          <a
+          {/* <a
             href="https://t.me/mwhmustafa"
             target="_blank"
             className="flex gap-3 items-center"
           >
             <FaTelegramPlane className="w-8 h-8 rounded-full m-auto p-2 bg-[#0088cc] fill-white group-hover:scale-110 transition-all" />
             <span className="text-primary">@mwhmustafa</span>
+          </a> */}
+          <a
+            href="https://www.linkedin.com/in/mustafa-waheed-b42a02203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            className="flex gap-3 items-center"
+          >
+            <FaLinkedin className="w-8 h-8 rounded-full m-auto p-2 bg-[#0077B5] fill-white group-hover:scale-110 transition-all" />
+            <span className="text-primary">mustafa-waheed</span>
           </a>
           <a
             href="https://wa.me/9647733608808"

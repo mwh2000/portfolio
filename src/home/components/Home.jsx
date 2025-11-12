@@ -42,10 +42,10 @@ export default function Body() {
         <p className="flex flex-col">
           Email{" "}
           <a
-            href="mailto:asasimr55@gmail.com"
+            href="mailto:mstafawahed1@gmail.com"
             className="text-primary font-bold"
           >
-            asasimr55@gmail.com
+            mstafawahed1@gmail.com
           </a>
         </p>
       </div>
