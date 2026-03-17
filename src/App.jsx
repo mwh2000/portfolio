@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="bg-bg">
+      <div className="bg-bg dark:bg-slate-950 transition-colors duration-500 overflow-x-hidden">
         <Home />
         <Experiences />
         <Projects />

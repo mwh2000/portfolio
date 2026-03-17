@@ -1,57 +1,87 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FaFigma, FaReact } from "react-icons/fa";
+import { FaFigma, FaReact, FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { DiPhp } from "react-icons/di";
+import { DiPhp, DiJavascript1 } from "react-icons/di";
 import { TbApi } from "react-icons/tb";
-import { DiJavascript1 } from "react-icons/di";
 import { BiLogoFlutter } from "react-icons/bi";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-// eslint-disable-next-line no-unused-vars
-import { CustomButton } from "../../components";
-import data from "./../data.json";
+import { motion } from "framer-motion";
 
-const iconMapping = {
-  Figma: FaFigma,
-  Flutter: BiLogoFlutter,
-  React: FaReact,
-  Tailwind: RiTailwindCssFill,
-  php: DiPhp,
-  api: TbApi,
-  javascript: DiJavascript1,
-  // Add other mappings as needed
+const skillsConfig = {
+  Figma: { Icon: FaFigma, color: "text-[#ea4c1d]", bg: "bg-[#ea4c1d]/10" },
+  Flutter: {
+    Icon: BiLogoFlutter,
+    color: "text-[#5fc9f8]",
+    bg: "bg-[#5fc9f8]/10",
+  },
+  React: { Icon: FaReact, color: "text-[#087ea4]", bg: "bg-[#087ea4]/10" },
+  Tailwind: {
+    Icon: RiTailwindCssFill,
+    color: "text-[#00a6f4]",
+    bg: "bg-[#00a6f4]/10",
+  },
+  php: { Icon: DiPhp, color: "text-[#4f5b93]", bg: "bg-[#4f5b93]/10" },
+  api: { Icon: TbApi, color: "text-primary", bg: "bg-primary/10" },
+  javascript: {
+    Icon: DiJavascript1,
+    color: "text-[#F7DF1E]",
+    bg: "bg-[#F7DF1E]/10",
+  },
 };
 
 export default function Skills() {
   return (
-    <div className="p-6 flex flex-col gap-8 md:max-w-[85%] mx-auto">
-      <p className="text-3xl font-bold">Skills</p>
-      <div>
-        <Swiper
-          loop={false}
-          breakpoints={{
-            0: { slidesPerView: 3, spaceBetween: 10 },
-            512: { slidesPerView: 4, spaceBetween: 10 },
-            765: { slidesPerView: 6, spaceBetween: 10 },
-          }}
-          freeMode={false}
-        >
-          {data.skills.map((skill, index) => {
-            const IconComponent = iconMapping[skill.name]; // Get the correct icon component
+    <div className="p-6 md:p-12 flex flex-col gap-8 md:gap-10 md:max-w-[85%] mx-auto pb-16 md:pb-32">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        className="flex flex-col gap-2"
+      >
+        <p className="text-sm font-black uppercase tracking-[0.3em] text-primary">
+          Capabilities
+        </p>
+        <h2 className="text-4xl font-black text-slate-900 dark:text-white">
+          Tech <span className="text-primary italic">Stack</span>
+        </h2>
+      </motion.div>
 
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 md:gap-8">
+          {Object.entries(skillsConfig).map(([name, config], i) => {
+            const IconComponent = config.Icon;
             return (
-              <SwiperSlide key={index} className="cursor-pointer">
-                <div className="group w-24 h-24 bg-secondary text-primary border-2 border-primary border-opacity-5 p-2 rounded-full content-center">
-                  {IconComponent && (
-                    <IconComponent className="w-12 h-12 m-auto fill-primary md:group-hover:scale-110 transition-all" />
-                  )}{" "}
-                </div>
-              </SwiperSlide>
+              <motion.div
+                key={name}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="flex flex-col items-center gap-4"
+              >
+                <motion.div
+                  whileHover={{ y: -8 }}
+                  className={`group flex flex-col items-center gap-4 cursor-pointer`}
+                >
+                  <div
+                    className={`w-20 h-20 md:w-24 md:h-24 ${config.bg} rounded-3xl flex items-center justify-center transition-all duration-300 shadow-sm dark:shadow-none`}
+                  >
+                    <IconComponent
+                      className={`text-4xl md:text-4xl ${config.color} transition-transform duration-300 group-hover:scale-110`}
+                    />
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 group-hover:text-primary transition-colors">
+                    {name}
+                  </span>
+                </motion.div>
+              </motion.div>
             );
           })}
-        </Swiper>
-      </div>
+        </div>
+      </motion.div>
     </div>
   );
 }
