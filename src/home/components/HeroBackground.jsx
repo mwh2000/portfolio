@@ -33,7 +33,7 @@ const HeroBackground = () => {
 
       {/* Modern Tech Shapes (SVGs) */}
       <svg
-        className="absolute inset-0 w-full h-full opacity-[0.03] dark:opacity-[0.07]"
+        className="absolute inset-0 w-full h-full opacity-[0.06]"
         viewBox="0 0 800 800"
         xmlns="http://www.w3.org/2000/svg"
       >

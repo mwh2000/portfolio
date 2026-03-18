@@ -6,8 +6,55 @@ import {
   FaWhatsapp,
   FaInstagram,
 } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
+
+function MagneticAnchor({ children, href, className }) {
+  const ref = useRef(null);
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const mouseXSpring = useSpring(x, { stiffness: 150, damping: 15 });
+  const mouseYSpring = useSpring(y, { stiffness: 150, damping: 15 });
+
+  const handleMouseMove = (e) => {
+    if (!ref.current) return;
+    const rect = ref.current.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+
+    // Calculate distance from center, scale down movement
+    const xPct = (mouseX / width - 0.5) * 25;
+    const yPct = (mouseY / height - 0.5) * 25;
+
+    x.set(xPct);
+    y.set(yPct);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
+  return (
+    <motion.a
+      ref={ref}
+      href={href}
+      target="_blank"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{ x: mouseXSpring, y: mouseYSpring }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className={`group cursor-pointer inline-flex items-center justify-center ${className}`}
+    >
+      {children}
+    </motion.a>
+  );
+}
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -28,13 +75,14 @@ export default function Footer() {
             <p className="text-xl text-slate-500 dark:text-slate-400 font-medium">
               Open for collaborations and interesting projects.
             </p>
-            <a
+            <MagneticAnchor
               href="mailto:mstafawahed1@gmail.com"
-              target="_blank"
-              className="w-fit px-8 py-4 bg-primary text-white rounded-2xl font-bold shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all transform hover:scale-105 active:scale-95"
+              className="w-fit px-8 py-4 bg-primary text-white rounded-2xl font-bold shadow-xl shadow-primary/20 hover:bg-primary-dark transition-colors"
             >
-              Start a Conversation
-            </a>
+              <span className="flex items-center gap-2">
+                Start a Conversation
+              </span>
+            </MagneticAnchor>
           </motion.div>
 
           <motion.div
@@ -80,7 +128,7 @@ export default function Footer() {
                 key={i}
                 href={social.href}
                 target="_blank"
-                className="group flex items-center gap-4 p-5 bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-300"
+                className="group flex items-center gap-4 p-5 bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 transition-all duration-300"
               >
                 <div
                   className={`p-3 rounded-2xl ${social.color} dark:bg-slate-800/50 group-hover:scale-110 transition-transform`}
@@ -109,7 +157,7 @@ export default function Footer() {
           <p className="text-slate-400 dark:text-slate-500 text-sm font-medium">
             &copy; {new Date().getFullYear()} — Built with passion by Mustafa
           </p>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
             <span className="text-[10px] uppercase tracking-widest font-black text-slate-400 dark:text-slate-500">
               Available for Work

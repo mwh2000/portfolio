@@ -11,10 +11,18 @@ function App() {
     <>
       <Navbar />
       <div className="bg-bg dark:bg-slate-950 transition-colors duration-500 overflow-x-hidden">
-        <Home />
-        <Experiences />
-        <Projects />
-        <Skills />
+        <section id="home">
+          <Home />
+        </section>
+        <section id="services">
+          <Experiences />
+        </section>
+        <section id="works">
+          <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
         <Footer />
       </div>
     </>

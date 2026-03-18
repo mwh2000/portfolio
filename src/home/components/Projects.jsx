@@ -60,7 +60,7 @@ export default function Projects() {
             <SwiperSlide key={index}>
               <motion.div
                 // whileHover={{ y: -5 }}
-                className="group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-xl shadow-slate-100/50 dark:shadow-slate-950/50 cursor-pointer"
+                className="group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 cursor-pointer"
                 onClick={
                   project.images?.length ? () => showModal(project) : undefined
                 }

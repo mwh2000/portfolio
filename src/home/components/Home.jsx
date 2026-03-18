@@ -106,7 +106,6 @@ export default function Body() {
             className="flex gap-4 md:gap-6 justify-center md:justify-end"
           >
             {[
-              { Icon: FaFigma, color: "text-[#ea4c1d]", bg: "bg-[#ea4c1d]/5" },
               {
                 Icon: BiLogoFlutter,
                 color: "text-[#02569B]",
@@ -118,6 +117,7 @@ export default function Body() {
                 color: "text-[#38bdf8]",
                 bg: "bg-[#38bdf8]/10",
               },
+              { Icon: FaFigma, color: "text-[#ea4c1d]", bg: "bg-[#ea4c1d]/5" },
             ].map((tech, i) => (
               <motion.span
                 key={i}

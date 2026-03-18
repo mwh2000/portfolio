@@ -7,25 +7,68 @@ import { useTheme } from "../context/ThemeContext";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+
+    // Intersection Observer for Active Section
+    const observerOptions = {
+      root: null,
+      rootMargin: "-40% 0px -40% 0px", // Trigger when section is in the middle of the screen
+      threshold: 0,
+    };
+
+    const handleIntersect = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+    const sections = ["home", "services", "works", "skills"];
+    sections.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
+    };
   }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
+  const scrollToSection = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 100; // Height of the sticky navbar + some padding
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
   const navLinks = [
-    { name: "Services", href: "#" },
-    { name: "Works", href: "#" },
-    { name: "Notes", href: "#" },
-    { name: "Experience", href: "#" },
+    { name: "Home", href: "home" },
+    { name: "Services", href: "services" },
+    { name: "Works", href: "works" },
+    { name: "Skills", href: "skills" },
   ];
 
   return (
@@ -44,6 +87,7 @@ export default function Navbar() {
         <motion.a
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
+          onClick={(e) => scrollToSection(e, "home")}
           className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer"
         >
           <span className="self-center font-babylonica text-3xl font-bold whitespace-nowrap text-primary">
@@ -65,7 +109,6 @@ export default function Navbar() {
             )}
           </motion.button>
 
-          {/* ... existing mobile menu toggle ... */}
           <button
             onClick={toggleMenu}
             type="button"
@@ -112,17 +155,24 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
-                className="w-full md:w-auto text-center md:text-left py-2 md:py-0"
+                className="w-full md:w-auto text-center md:text-left py-2 md:py-0 relative md:px-1"
               >
                 <a
-                  href={link.href}
-                  className={`navlink ${
-                    idx === 0
-                      ? "text-primary"
-                      : "text-slate-700 dark:text-slate-300"
-                  } hover:text-primary dark:hover:text-primary transition-colors`}
+                  href={`#${link.href}`}
+                  onClick={(e) => scrollToSection(e, link.href)}
+                  className={`navlink transition-all duration-300 ${
+                    activeSection === link.href
+                      ? "text-primary scale-110"
+                      : "text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary"
+                  }`}
                 >
                   {link.name}
+                  {activeSection === link.href && (
+                    <motion.div
+                      layoutId="activeUnderline"
+                      className="absolute -bottom-1 left-0 right-0 h-[2px] bg-primary hidden md:block"
+                    />
+                  )}
                 </a>
               </motion.li>
             ))}

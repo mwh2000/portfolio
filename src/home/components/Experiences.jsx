@@ -71,7 +71,7 @@ export default function Experiences() {
   };
 
   return (
-    <div className="w-full mx-auto py-10 md:py-20 px-4">
+    <div className="w-full mx-auto py-10 px-4">
       <motion.div
         variants={containerVariants}
         initial="hidden"

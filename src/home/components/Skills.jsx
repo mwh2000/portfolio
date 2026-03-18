@@ -6,7 +6,6 @@ import { BiLogoFlutter } from "react-icons/bi";
 import { motion } from "framer-motion";
 
 const skillsConfig = {
-  Figma: { Icon: FaFigma, color: "text-[#ea4c1d]", bg: "bg-[#ea4c1d]/10" },
   Flutter: {
     Icon: BiLogoFlutter,
     color: "text-[#5fc9f8]",
@@ -18,6 +17,7 @@ const skillsConfig = {
     color: "text-[#00a6f4]",
     bg: "bg-[#00a6f4]/10",
   },
+  Figma: { Icon: FaFigma, color: "text-[#ea4c1d]", bg: "bg-[#ea4c1d]/10" },
   php: { Icon: DiPhp, color: "text-[#4f5b93]", bg: "bg-[#4f5b93]/10" },
   api: { Icon: TbApi, color: "text-primary", bg: "bg-primary/10" },
   javascript: {
@@ -67,13 +67,15 @@ export default function Skills() {
                   className={`group flex flex-col items-center gap-4 cursor-pointer`}
                 >
                   <div
-                    className={`w-20 h-20 md:w-24 md:h-24 ${config.bg} rounded-3xl flex items-center justify-center transition-all duration-300 shadow-sm dark:shadow-none`}
+                    className={`w-20 h-20 md:w-24 md:h-24 ${config.bg} rounded-3xl flex items-center justify-center transition-all duration-300`}
                   >
                     <IconComponent
                       className={`text-4xl md:text-4xl ${config.color} transition-transform duration-300 group-hover:scale-110`}
                     />
                   </div>
-                  <span className="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 group-hover:text-primary transition-colors">
+                  <span
+                    className={`text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 group-hover:text-primary transition-colors`}
+                  >
                     {name}
                   </span>
                 </motion.div>
