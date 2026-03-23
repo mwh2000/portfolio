@@ -1,17 +1,25 @@
 {
   "projects": [
     {
-      "name": "Hakli",
-      "description": "Design UI/UX & Develop a dashboard, mobile app, farm panel for a real services project called Hakli, a project for control and manage the smart farms online.",
-      "main-image": "./hakli.png",
-      "images": ["./hakli.png", "./hakli_app.png"],
-      "url": "https://apps.apple.com/us/app/hakli/id6753976619"
+      "name": "KCML / SLV",
+      "description": "Develop a dashboard for LafargeHolcim Group",
+      "main-image": "./SLV.png",
+      "images": ["./SLV.png", "./SLV-1.png"],
+      "in-progress": true
     },
     {
       "name": "Shoppy",
       "description": "Design UI/UX & Develop a dashboard, mobile app for a real project called Shoppy, a project for selling and buying products online, It can be used for all business activities.",
       "main-image": "./shoppy.png",
-      "images": ["./shoppy.png", "./shoppy-1.png"]
+      "images": ["./shoppy.png", "./shoppy-1.png"],
+      "in-progress": true
+    },
+    {
+      "name": "Hakli",
+      "description": "Design UI/UX & Develop a dashboard, mobile app, farm panel for a real services project called Hakli, a project for control and manage the smart farms online.",
+      "main-image": "./hakli.png",
+      "images": ["./hakli.png", "./hakli_app.png"],
+      "url": "https://apps.apple.com/us/app/hakli/id6753976619"
     },
     {
       "name": "KCML",
@@ -28,7 +36,7 @@
     },
     {
       "name": "POM Logo",
-      "description": "Logo design for Planet of Medicine project, a project for clinic management and booking medical appointments online.",
+      "description": "visual identity design for Planet of Medicine project, a project for clinic management and booking medical appointments online.",
       "main-image": "./POM logo.png",
       "images": [
         "./POM logo.png",
@@ -57,6 +65,24 @@
       "description": "Design UI/UX for a menu app, a project for showing the menu of a restaurants.",
       "main-image": "./menu1.jpeg",
       "images": ["./menu1.jpeg", "./menu2.png"]
+    }
+  ],
+  "Success-partners": [
+    {
+      "name": "Lafarge",
+      "logo": "./lafarge-logo.png"
+    },
+    {
+      "name": "Hakli",
+      "logo": "./hakli-logo.png"
+    },
+    {
+      "name": "KCML",
+      "logo": "./KCML-logo.png"
+    },
+    {
+      "name": "Planet of Medicine",
+      "logo": "./pom-logo.png"
     }
   ],
   "skills": [

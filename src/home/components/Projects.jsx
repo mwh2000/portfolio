@@ -141,16 +141,30 @@ export default function Projects() {
             </Swiper>
           </div>
 
-          {currentProject.url && (
-            <div className="flex justify-end">
+          <div className="flex flex-wrap self-end items-center justify-between gap-4 mt-2">
+            <div>
+              {currentProject["in-progress"] && (
+                <div className="flex items-center gap-2 px-4 py-2 bg-sky-50 dark:bg-sky-900/20 rounded-xl border border-sky-100 dark:border-sky-800/30">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+                  </span>
+                  <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-sky-600 dark:text-sky-400">
+                    Project in Progress
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {currentProject.url && (
               <button
                 onClick={() => window.open(currentProject.url, "_blank")}
                 className="px-6 py-3 bg-primary text-white rounded-xl font-bold shadow-lg shadow-primary/20 hover:bg-primary-dark dark:hover:bg-primary-light transition-all transform hover:scale-105 active:scale-95"
               >
                 Visit Live Site
               </button>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </Modal>
     </div>

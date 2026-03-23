@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./home/components/Home";
 import Experiences from "./home/components/Experiences";
 import Projects from "./home/components/Projects";
+import Partners from "./home/components/Partners";
 import Skills from "./home/components/Skills";
 import Footer from "./home/components/Footer";
 
@@ -20,6 +21,7 @@ function App() {
         <section id="works">
           <Projects />
         </section>
+        <Partners />
         <section id="skills">
           <Skills />
         </section>
