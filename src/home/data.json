@@ -8,6 +8,12 @@
       "url": "https://apps.apple.com/us/app/hakli/id6753976619"
     },
     {
+      "name": "Shoppy",
+      "description": "Design UI/UX & Develop a dashboard, mobile app for a real project called Shoppy, a project for selling and buying products online, It can be used for all business activities.",
+      "main-image": "./shoppy.png",
+      "images": ["./shoppy.png", "./shoppy-1.png"]
+    },
+    {
       "name": "KCML",
       "description": "Develop a dashboard for KARBALA Cement Manufacturing Limited project called KCML",
       "main-image": "./KCML.png",
@@ -19,6 +25,18 @@
       "url": "https://www.planetofmedicine.com/",
       "main-image": "./pom.png",
       "images": ["./pom.png", "./pom1.png"]
+    },
+    {
+      "name": "POM Logo",
+      "description": "Logo design for Planet of Medicine project, a project for clinic management and booking medical appointments online.",
+      "main-image": "./POM logo.png",
+      "images": [
+        "./POM logo.png",
+        "./POM logo-1.png",
+        "./POM logo-2.png",
+        "./POM logo-3.png",
+        "./POM logo-4.png"
+      ]
     },
     {
       "name": "Restaurant Design",
