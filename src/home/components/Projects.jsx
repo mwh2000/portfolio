@@ -120,12 +120,22 @@ export default function Projects() {
             >
               {currentProject.images?.map((image, index) => (
                 <SwiperSlide key={index}>
-                  <img
-                    src={image}
-                    alt={currentProject["name"]}
-                    className="h-64 md:h-[400px] w-full object-contain"
-                    loading="lazy"
-                  />
+                  <div className="relative h-64 md:h-[400px] w-full overflow-hidden flex items-center justify-center bg-slate-100 dark:bg-slate-900">
+                    {/* Blurred Background */}
+                    <img
+                      src={image}
+                      alt=""
+                      className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 dark:opacity-20 scale-110"
+                      aria-hidden="true"
+                    />
+                    {/* Main Image */}
+                    <img
+                      src={image}
+                      alt={currentProject["name"]}
+                      className="relative z-10 max-h-full max-w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
                 </SwiperSlide>
               ))}
             </Swiper>
