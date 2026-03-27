@@ -1,4 +1,4 @@
-import { FaFigma, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaFigma, FaReact, FaNodeJs, FaLaravel } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiPhp, DiJavascript1 } from "react-icons/di";
 import { TbApi } from "react-icons/tb";
@@ -19,12 +19,17 @@ const skillsConfig = {
   },
   Figma: { Icon: FaFigma, color: "text-[#ea4c1d]", bg: "bg-[#ea4c1d]/10" },
   php: { Icon: DiPhp, color: "text-[#4f5b93]", bg: "bg-[#4f5b93]/10" },
-  api: { Icon: TbApi, color: "text-primary", bg: "bg-primary/10" },
   javascript: {
     Icon: DiJavascript1,
     color: "text-[#F7DF1E]",
     bg: "bg-[#F7DF1E]/10",
   },
+  laravel: {
+    Icon: FaLaravel,
+    color: "text-[#f53003]",
+    bg: "bg-[#f53003]/10",
+  },
+  api: { Icon: TbApi, color: "text-primary", bg: "bg-primary/10" },
 };
 
 export default function Skills() {

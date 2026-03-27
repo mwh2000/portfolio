@@ -28,6 +28,12 @@
       "images": ["./KCML.png", "./KCML_app.png"]
     },
     {
+      "name": "ISG",
+      "description": "Develop a dashboard for Iron Spangle company",
+      "main-image": "./ISG.png",
+      "images": ["./ISG.png", "./ISG-1.png"]
+    },
+    {
       "name": "Planet of Medicine",
       "description": "Design UI/UX for a medical project called Planet of Medicine, a project for clinic management and booking medical appointments online.",
       "url": "https://www.planetofmedicine.com/",
@@ -73,8 +79,8 @@
       "logo": "./lafarge-logo.png"
     },
     {
-      "name": "Hakli",
-      "logo": "./hakli-logo.png"
+      "name": "ISG.com",
+      "logo": "./ISG-logo.png"
     },
     {
       "name": "KCML",
@@ -106,6 +112,9 @@
     },
     {
       "name": "Figma"
+    },
+    {
+      "name": "laravel"
     }
   ]
 }

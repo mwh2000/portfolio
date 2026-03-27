@@ -28,7 +28,7 @@ export default function Partners() {
               {duplicated.map((partner, index) => (
                 <div
                   key={index}
-                  className="mx-4 md:mx-6 h-12 md:h-16 px-4 py-2 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500 flex-shrink-0"
+                  className="mx-4 md:mx-6 h-12 md:h-16 px-4 py-2 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-500 flex-shrink-0"
                 >
                   <img
                     src={partner.logo}
